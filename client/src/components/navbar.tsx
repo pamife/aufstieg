@@ -58,7 +58,6 @@ export default function Navbar() {
             <NavLink href="#home" active={activeSection === "home"}>Startseite</NavLink>
             <NavLink href="#ueber-uns" active={activeSection === "ueber-uns"}>Über uns</NavLink>
             <NavLink href="#programm" active={activeSection === "programm"}>Programm</NavLink>
-            <NavLink href="#aktuelles" active={activeSection === "aktuelles"}>Aktuelles</NavLink>
             <NavLink href="#team" active={activeSection === "team"}>Team</NavLink>
             <NavLink href="#kontakt" active={activeSection === "kontakt"}>Kontakt</NavLink>
             <a href="#" className="btn-primary ml-4">
@@ -78,7 +77,6 @@ export default function Navbar() {
           <MobileNavLink href="#home" onClick={closeMobileMenu}>Startseite</MobileNavLink>
           <MobileNavLink href="#ueber-uns" onClick={closeMobileMenu}>Über uns</MobileNavLink>
           <MobileNavLink href="#programm" onClick={closeMobileMenu}>Programm</MobileNavLink>
-          <MobileNavLink href="#aktuelles" onClick={closeMobileMenu}>Aktuelles</MobileNavLink>
           <MobileNavLink href="#team" onClick={closeMobileMenu}>Team</MobileNavLink>
           <MobileNavLink href="#kontakt" onClick={closeMobileMenu}>Kontakt</MobileNavLink>
           <div className="pt-3 pb-2">
