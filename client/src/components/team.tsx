@@ -22,30 +22,27 @@ export default function Team() {
               <div className="bg-[#0B3D91] h-24 relative">
                 <div className="w-24 h-24 rounded-full bg-white p-1 absolute left-1/2 transform -translate-x-1/2 -bottom-12">
                   {member.name === "Colin & Marvin" ? (
-                    <div className="w-full h-full rounded-full overflow-hidden flex items-center justify-center">
+                    <div className="w-full h-full rounded-full overflow-hidden">
                       <img 
                         src={colinMarvinImage} 
-                        alt={member.name}
-                        className="w-auto h-auto max-w-none max-h-none"
-                        style={{ transform: "scale(1.3)" }}
+                        alt={member.name} 
+                        className="w-full h-full object-cover"
                       />
                     </div>
                   ) : member.name === "Jermaine" ? (
-                    <div className="w-full h-full rounded-full overflow-hidden flex items-center justify-center">
+                    <div className="w-full h-full rounded-full overflow-hidden">
                       <img 
                         src={jermaineImage} 
                         alt={member.name} 
-                        className="w-auto h-auto max-w-none max-h-none"
-                        style={{ transform: "scale(1.3)" }}
+                        className="w-full h-full object-cover"
                       />
                     </div>
                   ) : member.name === "Jannis und Paul" ? (
-                    <div className="w-full h-full rounded-full overflow-hidden flex items-center justify-center">
+                    <div className="w-full h-full rounded-full overflow-hidden">
                       <img 
                         src={paulJannisImage} 
                         alt={member.name} 
-                        className="w-auto h-auto max-w-none max-h-none"
-                        style={{ transform: "scale(1.3)" }}
+                        className="w-full h-full object-cover"
                       />
                     </div>
                   ) : (
