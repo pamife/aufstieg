@@ -1,6 +1,7 @@
 import { teamMembers } from "@/lib/constants";
 import colinMarvinImage from "../assets/colin_marvin.png";
 import jermaineImage from "../assets/jermaine.png";
+import paulJannisImage from "../assets/paul_jannis.png";
 
 export default function Team() {
   return (
@@ -32,6 +33,14 @@ export default function Team() {
                     <div className="w-full h-full rounded-full overflow-hidden">
                       <img 
                         src={jermaineImage} 
+                        alt={member.name} 
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                  ) : member.name === "Jannis und Paul" ? (
+                    <div className="w-full h-full rounded-full overflow-hidden">
+                      <img 
+                        src={paulJannisImage} 
                         alt={member.name} 
                         className="w-full h-full object-cover"
                       />
