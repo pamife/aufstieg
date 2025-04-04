@@ -6,11 +6,8 @@ export default function Footer() {
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
           <div>
-            <div className="flex items-center mb-4">
-              <div className="w-10 h-10 rounded-full bg-white flex items-center justify-center mr-2">
-                <span className="text-[#0B3D91] font-bold">DAP</span>
-              </div>
-              <span className="font-['Playfair_Display',serif] font-bold text-lg">Die Aufstiegspartei</span>
+            <div className="mb-4">
+              <Logo />
             </div>
             <p className="text-neutral-400 mb-4">"Der Weg nach oben!"</p>
             <p className="text-neutral-400">Für ein starkes, souveränes Deutschland mit Sicherheit, Wohlstand und traditionellen Werten.</p>
