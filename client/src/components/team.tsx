@@ -27,7 +27,7 @@ export default function Team() {
                         src={colinMarvinImage} 
                         alt={member.name}
                         className="w-auto h-auto max-w-none max-h-none"
-                        style={{ transform: "scale(0.6)" }}
+                        style={{ transform: "scale(1.3)" }}
                       />
                     </div>
                   ) : member.name === "Jermaine" ? (
@@ -36,7 +36,7 @@ export default function Team() {
                         src={jermaineImage} 
                         alt={member.name} 
                         className="w-auto h-auto max-w-none max-h-none"
-                        style={{ transform: "scale(0.6)" }}
+                        style={{ transform: "scale(1.3)" }}
                       />
                     </div>
                   ) : member.name === "Jannis und Paul" ? (
@@ -45,7 +45,7 @@ export default function Team() {
                         src={paulJannisImage} 
                         alt={member.name} 
                         className="w-auto h-auto max-w-none max-h-none"
-                        style={{ transform: "scale(0.6)" }}
+                        style={{ transform: "scale(1.3)" }}
                       />
                     </div>
                   ) : (
