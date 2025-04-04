@@ -26,7 +26,7 @@ export default function Team() {
                       <img 
                         src={colinMarvinImage} 
                         alt={member.name} 
-                        className="w-full h-full object-cover"
+                        className="w-full h-full object-cover object-top translate-y-2"
                       />
                     </div>
                   ) : member.name === "Jermaine" ? (
@@ -34,7 +34,7 @@ export default function Team() {
                       <img 
                         src={jermaineImage} 
                         alt={member.name} 
-                        className="w-full h-full object-cover"
+                        className="w-full h-full object-cover object-top translate-y-2"
                       />
                     </div>
                   ) : member.name === "Jannis und Paul" ? (
@@ -42,7 +42,7 @@ export default function Team() {
                       <img 
                         src={paulJannisImage} 
                         alt={member.name} 
-                        className="w-full h-full object-cover"
+                        className="w-full h-full object-cover object-top translate-y-2"
                       />
                     </div>
                   ) : (
