@@ -140,6 +140,86 @@ export const programCategories = [
   }
 ];
 
+// Vollständiges Parteiprogramm für die ausklappbare Ansicht
+export const fullPartyProgram = {
+  name: "DAP – Die Aufstiegspartei",
+  slogan: "Der Weg nach oben!",
+  vision: {
+    title: "Unsere Vision & Grundwerte",
+    values: [
+      "Nationale Souveränität: Deutschland muss unabhängig und selbstbestimmt handeln.",
+      "Sicherheit und Ordnung: Stabile Gesetze und konsequente Durchsetzung für ein sicheres Deutschland.",
+      "Leistungsgesellschaft: Wer arbeitet, muss davon profitieren – kein staatliches Daueralimentieren.",
+      "Tradition und Familie: Schutz der klassischen Werte und Förderung traditioneller Familienmodelle.",
+      "Technologischer Fortschritt: Digitalisierung und technische Innovationen zur Stärkung der Wirtschaft."
+    ],
+    longTermGoals: [
+      "Strikte Kontrolle der Migration",
+      "Wirtschaftswachstum durch unabhängige Energiepolitik",
+      "Stärkung der Bundeswehr und nationaler Sicherheit",
+      "Abkehr von sozialistischen und ideologisch geprägten Wirtschaftsexperimenten"
+    ]
+  },
+  coreThemes: [
+    {
+      id: "bildung-jugend",
+      title: "Bildung & Jugend",
+      points: [
+        "Leistungsförderung statt Gleichmacherei: Abschaffung von ideologischen Lehrinhalten, mehr Fokus auf Mathematik, Naturwissenschaften und Technik.",
+        "Pflichtjahr für alle Jugendlichen in Bundeswehr, Katastrophenschutz oder sozialem Dienst.",
+        "Einführung einer digitalen Bildungsstrategie, um Deutschland international konkurrenzfähig zu machen."
+      ]
+    },
+    {
+      id: "umwelt-klimaschutz",
+      title: "Umwelt & Klimaschutz",
+      points: [
+        "Wiedereinstieg in die Atomenergie zur sicheren und bezahlbaren Energieversorgung.",
+        "Förderung synthetischer Kraftstoffe statt Verbote für Verbrennungsmotoren.",
+        "Schluss mit Klima-Ideologie: Realistische Umweltpolitik ohne wirtschaftlichen Schaden."
+      ]
+    },
+    {
+      id: "soziales-wirtschaft",
+      title: "Soziale Gerechtigkeit & Wirtschaft",
+      points: [
+        "Reform des Bürgergelds: Arbeit muss sich immer mehr lohnen als staatliche Unterstützung.",
+        "Förderung der heimischen Industrie durch den Ausbau nationaler Energiequellen und Infrastruktur.",
+        "Steuererleichterungen für Mittelstand und arbeitende Bevölkerung, Senkung der Sozialausgaben."
+      ]
+    },
+    {
+      id: "digitalisierung-zukunft",
+      title: "Digitalisierung & Zukunftstechnologien",
+      points: [
+        "Bürokratieabbau durch Digitalisierung der Verwaltung.",
+        "Förderung von Hochtechnologien (KI, Quantencomputing, Biotechnologie) zur Stärkung der Wirtschaft.",
+        "Datenschutz stärken: Weniger Überwachung und Einschränkungen für Bürger, aber konsequente Bekämpfung von Cyberkriminalität."
+      ]
+    },
+    {
+      id: "gesellschaft-demokratie",
+      title: "Gesellschaft & Demokratie",
+      points: [
+        "Keine Frühsexualisierung und Gender-Ideologie in Schulen und Behörden.",
+        "Direkte Demokratie stärken: Volksabstimmungen zu zentralen politischen Fragen.",
+        "Einführung der Wehrpflicht für Männer und Frauen zur Stärkung der Landesverteidigung."
+      ]
+    }
+  ],
+  electionPromises: [
+    "Energie für Deutschland: Wiedereinstieg in die Kernenergie und sichere Energieversorgung.",
+    "Schutz der Grenzen: Konsequente Regulierung der Migration.",
+    "Leistung muss sich lohnen: Bürgergeld reformieren, Arbeitsanreize schaffen."
+  ],
+  team: [
+    { role: "Parteivorsitzender", name: "Jannis und Paul" },
+    { role: "Sprecher für Wirtschaft & Finanzen", name: "Jermaine" },
+    { role: "Sprecher für Sicherheit & Verteidigung", name: "Colin, Marvin" }
+  ],
+  closing: "DAP – Für ein starkes, souveränes Deutschland!"
+};
+
 // News items
 export const newsItems = [
   {
