@@ -22,27 +22,30 @@ export default function Team() {
               <div className="bg-[#0B3D91] h-24 relative">
                 <div className="w-24 h-24 rounded-full bg-white p-1 absolute left-1/2 transform -translate-x-1/2 -bottom-12">
                   {member.name === "Colin & Marvin" ? (
-                    <div className="w-full h-full rounded-full overflow-hidden">
+                    <div className="w-full h-full rounded-full overflow-hidden flex items-center justify-center">
                       <img 
                         src={colinMarvinImage} 
-                        alt={member.name} 
-                        className="w-full h-full object-cover"
+                        alt={member.name}
+                        className="w-auto h-auto max-w-none max-h-none"
+                        style={{ transform: "scale(0.6)" }}
                       />
                     </div>
                   ) : member.name === "Jermaine" ? (
-                    <div className="w-full h-full rounded-full overflow-hidden">
+                    <div className="w-full h-full rounded-full overflow-hidden flex items-center justify-center">
                       <img 
                         src={jermaineImage} 
                         alt={member.name} 
-                        className="w-full h-full object-cover"
+                        className="w-auto h-auto max-w-none max-h-none"
+                        style={{ transform: "scale(0.6)" }}
                       />
                     </div>
                   ) : member.name === "Jannis und Paul" ? (
-                    <div className="w-full h-full rounded-full overflow-hidden">
+                    <div className="w-full h-full rounded-full overflow-hidden flex items-center justify-center">
                       <img 
                         src={paulJannisImage} 
                         alt={member.name} 
-                        className="w-full h-full object-cover"
+                        className="w-auto h-auto max-w-none max-h-none"
+                        style={{ transform: "scale(0.6)" }}
                       />
                     </div>
                   ) : (
