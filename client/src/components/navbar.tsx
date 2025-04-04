@@ -34,31 +34,34 @@ export default function Navbar() {
   };
 
   return (
-    <header className="bg-white shadow-md sticky top-0 z-50">
-      <div className="container mx-auto px-4 py-2">
+    <header className="bg-white shadow-md sticky top-0 z-50 transition-all duration-300">
+      <div className="container mx-auto px-4 py-3">
         <div className="flex justify-between items-center">
           {/* Logo */}
-          <Logo />
+          <a href="#home" className="transition-transform duration-300 hover:scale-105">
+            <Logo />
+          </a>
 
           {/* Mobile menu button */}
           <div className="lg:hidden">
             <button 
               onClick={toggleMobileMenu}
-              className="text-neutral-700 hover:text-[#0B3D91] transition-colors"
+              className="text-neutral-700 hover:text-[#0B3D91] transition-colors p-2 rounded-md hover:bg-neutral-100"
+              aria-label="Toggle menu"
             >
-              <i className="fas fa-bars text-2xl"></i>
+              <i className={`fas ${mobileMenuOpen ? 'fa-times' : 'fa-bars'} text-2xl transition-transform duration-300 ${mobileMenuOpen ? 'rotate-90' : 'rotate-0'}`}></i>
             </button>
           </div>
 
           {/* Desktop Navigation */}
-          <nav className="hidden lg:flex items-center space-x-8">
+          <nav className="hidden lg:flex items-center space-x-6">
             <NavLink href="#home" active={activeSection === "home"}>Startseite</NavLink>
             <NavLink href="#ueber-uns" active={activeSection === "ueber-uns"}>Über uns</NavLink>
             <NavLink href="#programm" active={activeSection === "programm"}>Programm</NavLink>
             <NavLink href="#aktuelles" active={activeSection === "aktuelles"}>Aktuelles</NavLink>
             <NavLink href="#team" active={activeSection === "team"}>Team</NavLink>
             <NavLink href="#kontakt" active={activeSection === "kontakt"}>Kontakt</NavLink>
-            <a href="#" className="bg-[#8B0000] hover:bg-[#750000] text-white px-4 py-2 rounded-md transition-colors">
+            <a href="#" className="btn-primary ml-4">
               Mitglied werden
             </a>
           </nav>
@@ -66,23 +69,29 @@ export default function Navbar() {
       </div>
 
       {/* Mobile Navigation */}
-      <nav className={`${mobileMenuOpen ? 'block' : 'hidden'} bg-white w-full border-t border-neutral-200 lg:hidden`}>
-        <div className="container mx-auto px-4 py-2 flex flex-col space-y-3">
+      <div 
+        className={`overflow-hidden transition-all duration-300 ${
+          mobileMenuOpen ? 'max-h-[500px] opacity-100' : 'max-h-0 opacity-0'
+        } bg-white w-full border-t border-neutral-200 lg:hidden`}
+      >
+        <div className="container mx-auto px-4 py-3 flex flex-col space-y-3">
           <MobileNavLink href="#home" onClick={closeMobileMenu}>Startseite</MobileNavLink>
           <MobileNavLink href="#ueber-uns" onClick={closeMobileMenu}>Über uns</MobileNavLink>
           <MobileNavLink href="#programm" onClick={closeMobileMenu}>Programm</MobileNavLink>
           <MobileNavLink href="#aktuelles" onClick={closeMobileMenu}>Aktuelles</MobileNavLink>
           <MobileNavLink href="#team" onClick={closeMobileMenu}>Team</MobileNavLink>
           <MobileNavLink href="#kontakt" onClick={closeMobileMenu}>Kontakt</MobileNavLink>
-          <a 
-            href="#" 
-            className="bg-[#8B0000] hover:bg-[#750000] text-white px-4 py-2 rounded-md transition-colors text-center"
-            onClick={closeMobileMenu}
-          >
-            Mitglied werden
-          </a>
+          <div className="pt-3 pb-2">
+            <a 
+              href="#" 
+              className="btn-primary block text-center"
+              onClick={closeMobileMenu}
+            >
+              Mitglied werden
+            </a>
+          </div>
         </div>
-      </nav>
+      </div>
     </header>
   );
 }
@@ -98,14 +107,9 @@ function NavLink({ href, active, children }: NavLinkProps) {
   return (
     <a 
       href={href} 
-      className={`nav-link py-2 text-neutral-800 hover:text-[#0B3D91] relative ${active ? 'active' : ''}`}
+      className={`nav-link py-2 px-3 text-neutral-800 hover:text-[#0B3D91] font-medium transition-all duration-300 ${active ? 'active' : ''}`}
     >
       <span>{children}</span>
-      <span 
-        className={`absolute bottom-[-3px] left-0 h-[2px] bg-[#FFD700] transition-all duration-300 ${
-          active ? 'w-full' : 'w-0'
-        }`}
-      />
     </a>
   );
 }
@@ -114,7 +118,7 @@ function MobileNavLink({ href, children, onClick }: NavLinkProps) {
   return (
     <a 
       href={href} 
-      className="py-2 text-neutral-800 hover:text-[#0B3D91] border-b border-neutral-100"
+      className="py-3 px-4 text-neutral-800 hover:text-[#0B3D91] hover:bg-neutral-50 border-b border-neutral-100 transition-all duration-200 block rounded-md"
       onClick={onClick}
     >
       {children}
